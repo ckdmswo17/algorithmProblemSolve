@@ -1,4 +1,4 @@
-# 이코테 문제 : 정렬된 배열에서 특정 수의 개수
+# 이코테 문제 : 정렬된 배열에서 특정 수의 개수 (직접 구현한 버전)
 def bsect_left(lst,value):
   for i in range(len(lst)):
     if lst[i] == value:
