@@ -1,4 +1,4 @@
-// 백준 문제 풀이 : 친구
+// 백준 문제 풀이 : 친구(미완)
 using System;
 
 namespace std {
