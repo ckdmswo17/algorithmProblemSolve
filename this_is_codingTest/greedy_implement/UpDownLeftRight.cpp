@@ -13,7 +13,7 @@ int main()
 
     string guide;
     cin.ignore(); // 버퍼비우기
-    getline(cin,guide);
+    getline(cin,guide); // 그냥 cin 입력은 띄어쓰기를 기준으로 받기때문에 한 라인 전체를 문자열로 받아야함
     
     int dx[4] = {0,-1,0,1};
     int dy[4] = {1,0,-1,0};
@@ -52,5 +52,5 @@ int main()
         }
     }
     
-    cout << x << " " << y; 
+    cout << x << " " << y;
 }
