@@ -1,4 +1,4 @@
-# 이코테 문제 : 인구 이동
+# 이코테 문제 : 인구 이동 (미완)
 
 from collections import deque
 
@@ -22,4 +22,3 @@ def bfs(graph,start,visited):
     while queue:
         v = queue.popleft()
         for i in graph[v]:
-            
