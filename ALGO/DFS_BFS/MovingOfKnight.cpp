@@ -2,6 +2,7 @@
 #include <iostream>
 #include <queue>
 #include <vector>
+// #include <cmath>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ int bfs(int i,int l,pair<int,int> startPos, pair<int,int> endPos,vector<vector<i
             int cx = cur.second + dx[j];
             if(cy >= 0 && cy < l && cx >= 0 && cx < l && board[cy][cx] == -1){
                 // float cDistance = sqrt(pow(cy-endPos.first,2)+pow(cx-endPos.second,2));
-                // if(cDistance < curDistance || cDistance <= sqrt(5)){
+                // if(cDistance < curDistance || cDistance <= sqrt(5)){ // 시간, 공간 복잡도 측면에서 개선 X -> 오히려 오답 
                 board[cy][cx] = board[cur.first][cur.second] + 1;
                 // cout << "현재 큐에 삽입되는 요소 : "<< cy << "," << cx << endl;
                 qu.push({cy,cx});
