@@ -1,4 +1,4 @@
-// 백준 문제 : N과 M (1)
+// 백준 문제 : N과 M (2)
 
 #include <iostream>
 #include <vector>
@@ -19,8 +19,16 @@ void p(vector<bool> isUsed,int count){
 
     for(int i=1;i<N+1;i++){
         if(isUsed[i] == false){
+            if(count > 0){ // 1번과 달라진 부분
+                if(arr[count-1] > i){
+                    continue;
+                } else {
+                    arr[count] = i;
+                }
+            } else {
+                arr[count] = i;
+            }
             isUsed[i] = true;
-            arr[count] = i;
             p(isUsed,count+1);
             isUsed[i] = false;
         }
