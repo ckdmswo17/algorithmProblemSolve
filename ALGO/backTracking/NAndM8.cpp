@@ -1,4 +1,4 @@
-// 백준 문제 : N과 M (7)
+// 백준 문제 : N과 M (8)
 
 #include <iostream>
 #include <algorithm>
@@ -19,6 +19,11 @@ void p(int count){
     }
 
     for(int i=0;i<N;i++){
+        if(count > 0){
+            if(arr[count-1] > nums[i]){
+                continue;
+            }
+        }
         arr[count] = nums[i];
         p(count+1);
     }
