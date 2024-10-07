@@ -45,8 +45,7 @@ int main(){
                     sn[i] = sn[j];
                     sn[j] = tmp;
                 } else if(sumi == sumj){
-                    int result = sn[i].compare(sn[j]);
-                    if(result > 0){
+                    if(sn[i] > sn[j]){
                         string tmp = sn[i];
                         sn[i] = sn[j];
                         sn[j] = tmp;
