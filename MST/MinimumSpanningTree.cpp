@@ -31,6 +31,7 @@ int main(){
 	priority_queue<tuple<int,int,int>,vector<tuple<int,int,int>>, greater<tuple<int,int,int>> > pq; // {비용, 정점1, 정점2}
 	int cnt = 0; // 선택된 간선 개수
 	
+	// 프림 알고리즘
 	checked[1] = true; // 1 방문 체크
 	int sum = 0;
 	for(auto i:adj[1]){
