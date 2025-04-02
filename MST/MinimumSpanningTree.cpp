@@ -49,5 +49,5 @@ int main(){
 			pq.push(make_tuple(i.first,c,i.second));
 		}
 	}
-	cout << sum << "\n";  
+	cout << sum << "\n";
 }
