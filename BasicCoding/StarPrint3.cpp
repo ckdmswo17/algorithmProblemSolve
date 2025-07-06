@@ -1,4 +1,4 @@
-// 백준 문제 : 별 찍기 - 2
+// 백준 문제 : 별 찍기 - 3
 
 #include <iostream>
 
@@ -12,10 +12,7 @@ int main(){
     cin >> N;
 
     for(int i=0;i<N;i++){
-        for(int j=0;j<N-i-1;j++){
-            cout << " ";
-        }
-        for(int j=0;j<i+1;j++){
+        for(int j=N-1;j>=i;j--){
             cout << "*";
         }
         cout << "\n";
