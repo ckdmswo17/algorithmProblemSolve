@@ -12,7 +12,7 @@ int main(){
 	
     string str;
     getline(cin,str);
-	while(str[0] != '.'){
+	while(str != "."){
         stack<char> sc;
 
         // 문자열 처리
